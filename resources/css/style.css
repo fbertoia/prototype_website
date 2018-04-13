@@ -19,19 +19,13 @@ html {
 }
 
 .row {
-    max-width:50rem;
-    margin: auto;
+    max-width:60rem;
+    margin: 0 auto;
 }
 
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-
-
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 section {
     padding: 80px 0;
@@ -58,11 +52,59 @@ h1 {
     letter-spacing: 1px;
 }
 
+h2 {
+    font-size:180%;
+    word-spacing:2px;
+    text-align:center;
+    margin-bottom:2rem;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    width: 10rem;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 1rem;
+}
+
 /* ----- PARAGRAPHS ----- */
 
+.long-copy{
+    line-height: 145%;
+    width: 60%;
+    margin: 0 auto;
+}
+.section-features .long-copy {
+    margin-bottom: 2rem;
+}
 .box p {
     font-size: 90%;
     line-height: 145%;
+    
+}
+
+/* ----- ICONS ----- */
+
+.icon-big {
+    font-size: 400%;
+    display:block;
+    color: #e67e22;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: margin 0.2s;
+}
+
+.icon-big:hover {
+    margin-top: 20px;
 }
 
 /* ----- LINKS ----- */
@@ -210,3 +252,42 @@ header {
     color: #fff;
 }
 
+/* ----------------------------------------------- */
+/* MEALS */
+/* ----------------------------------------------- */
+
+.section.meal {
+    padding : 0px;
+}
+
+.meals-showcase {
+    list-style : none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float:left;
+    width:25%;
+}
+
+.meal-photo{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    width:100%;
+    height: auto;
+    transform : scale(1.15);
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    transform : scale(1.05);
+    opacity: 0.9;
+
+}
